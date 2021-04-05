@@ -1,0 +1,6 @@
+<marquee style="float: none;" behavior="scroll" direction="right" scrollamount="6" class="marquee" onmouseout="this.setAttribute('scrollamount', 6, 0);"
+    onmouseover="this.setAttribute('scrollamount', 0, 0);">
+    <% news.forEach(function (item){ %>
+    <label style="float: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<%= item %></label>
+    <% }); %>
+</marquee>

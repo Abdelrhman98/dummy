@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>إدارة الشئون المعنويةة</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper">
+        <div class="row">
+            <div class="col-lg-2 ">
+                <% include partials\leftColumn.ejs %>
+            </div>
+            <div class="main-content">
+                <div class="col-lg-8" style="text-align: center;">
+                    <div style="width: 85%;margin-top: 8%; margin-left: 15%" class="panel panel-default">
+                        <div class="panel-heading" style="text-align: center; font-size: x-large; background-image: linear-gradient(to bottom, #2E1205, #EB010B); color: white">
+                            كل الأخبار
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="5" style="text-align: right; ">الخبر</th>
+                                            <th style=" text-align: right;">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% news.forEach(function (item){ %>
+                                        <tr>
+                                            <th style="text-align: right"> <a onclick="confirmDelete( <%=item.id%> )">حذف</a></th>
+                                            <th style="text-align: right"><a href=<%="/editnews/" +item.id %> >تعديل</a></th>
+                                            <td colspan="3">
+                                                <%= item.content %>
+                                            </td>
+                                            <td>
+                                                <%= item.id %>
+                                            </td>
+                                        </tr>
+                                        <% }); %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <% include partials\rightColumn.ejs %>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../assets/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="../assets/bootstrap.min.css"></script> -->
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../assets/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../assets/sb-admin-2.js"></script>
+    <script>
+        function confirmDelete(id) {
+            if (window.confirm("تأكيد مسح الخبر ")) {
+                console.log("current id ", id);
+                location.assign("/deletenews/" + id);
+            } else {
+
+            }
+        }
+    </script>
+</body>
+
+
+</html>

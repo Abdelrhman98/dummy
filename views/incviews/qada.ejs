@@ -1,0 +1,41 @@
+<button class="back_button"><a href="/">
+    <i class="fa fa-home back"></i>
+</a></button>
+<div class="row">
+    <div class="custom-header">
+        <p>
+            القادة السابقون
+        </p>
+    </div>
+    <% qada.forEach((one)=>{%>
+        <div class="col-lg-3 qada">
+            <div class="qada-card">
+                <div class="img_contianer">
+                    <div class="img-resizer">
+                        <img class="card-img" src="assets/qada/<%=one.id%>.jpg" alt="">
+                    </div>
+    
+                    <div class="info">
+                        <p>
+                            <span>الرتبة : </span>
+                            <span><%= one.rotba%></span>
+                        </p>
+                        <p>
+                            <span>الإسم : </span>
+                            <span><%= one.name%></span>
+                        </p>
+                        <p>
+                            <span>المدة:من </span>
+                            <span> <%=one.fromdate%></span>  
+                        </p>
+                        <p>
+                            <span>إلي</span>
+                            <span><%=one.todate%></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%})%>
+    
+</div>

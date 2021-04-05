@@ -1,0 +1,49 @@
+
+    <div class="row">
+        <div class="custom-header">
+            <p>
+                دليل التليفونات
+            </p>
+            
+        </div>
+    <div class="card_container2  center  col-lg-12">
+        <div class="header">
+            <h3>أفرع الإدارة </h3>
+        </div>
+        <div class="footer">
+            <ul class="selected row">
+                <% branches.forEach((branch)=>{%>
+                    <li ><a href=<%="/tel_index/"+branch.id%>><%= branch.branchName %></a></li>
+                <% }) %>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="card_container3  center  col-lg-12">
+        <div class="header">
+            <h3>الوحدات التابعة للإدارة </h3>
+        </div>
+        <div class="footer">
+            <ul class="selected row">
+                <% obranches.forEach((branch)=>{%>
+                    <li ><a href=<%="/tel_index/"+branch.id%>><%= branch.branchName %></a></li>
+                <% }) %>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="card_container3  center  col-lg-12">
+        <div class="header">
+            <h3>أفرع الشئون المعنوية بالجيوش والمناطق </h3>
+        </div>
+        <div class="footer">
+            <ul class="selected row">
+                <% tbranches.forEach((branch)=>{%>
+                    <li ><a href=<%="/tel_index/"+branch.id%>><%= branch.branchName %></a></li>
+                <% }) %>
+                
+            </ul>
+        </div>
+    </div>
+</div>

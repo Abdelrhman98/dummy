@@ -1,0 +1,51 @@
+
+
+    <div class="custom-header-dar" style="width:500px;margin: 40px auto 40px auto!important;">
+        <p>
+            دليل تليفون  إدارة الشئون المعنوية
+        </p>
+    </div>
+
+    <div id="myCarousel" class="carousel slide center_card" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        
+        <div class="carousel-inner" style="margin-top: 40px;">
+            
+            <div class="item active"style="height: 700px!important;" >
+                <a href="../assets/newtele/1.PNG" target="_blank">
+                    <img src="../assets/newtele/1.PNG"  style="width:100%!important; height: 700px!important;">
+                </a>
+            </div>
+            <% 
+            for(var i=from; i<= to;i++) {
+                var img = i+'.PNG'
+                
+                %>
+                <div class="item " style="height: 700px!important;" id="item">
+                    <a href="<%= '../assets/newtele/'+img %>" target="_blank">
+                        <img src="<%= '../assets/newtele/'+img %>"  style="width:100%!important; height: 700px!important;">
+                    </a>
+                </div>
+            <%}%>
+            
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <button type="button" class="btn btn-danger w3-display-left"style="margin-left: -7%;">
+                <p class="fa fa-arrow-circle-o-left" style="font-size: xx-large;margin-bottom: 0%;"></p>
+            </button>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <button type="button" class="btn btn-danger w3-display-right" style="margin-right: -7%;">
+                <p class="fa fa-arrow-circle-o-right" style="font-size: xx-large;margin-bottom: 0%;"></p>
+            </button>
+        </a>
+    </div>
+    <script src="../assets/jquery.min.js"></script>
+
+    <script>
+        //var test = document.getElementById("item")
+
+        
+    </script>

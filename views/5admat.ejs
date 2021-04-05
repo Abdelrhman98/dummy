@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>إدارة الشئون المعنوية </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+    <link href="../assets/sliderStyles.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../assets/customstyle.css">
+
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper">
+        
+        <% include partials\marquee.ejs %>
+
+        <div class="row   home_color">
+            
+            <div class="col-lg-2 ">
+                <% include partials\leftColumn.ejs %>
+            </div>
+            <div class="main-content">
+                <div class="col-lg-8">
+                    <button class="back_button"><a href="/">
+                        <i class="fa fa-home back"></i>
+                    </a></button>
+                    <div class="custom-header">
+                        <p>
+                            الخدمات و الترفية
+                        </p>
+                        
+                    </div>
+                    <div class="ss-container ">
+                        <div class="row">
+                            <div class="card_container  center col-lg-4">
+                                <div class="header">
+                                    <h3>المصايف</h3>
+                                </div>
+                                <div class="footer">
+                                    <ul class="selected">
+                                        <div class="upper">
+                                            <h3>مصايف الضباط</h3>
+                                            <li><a href="/tarfeh33/1">قرية سيدي كرير</a></li>
+                                            <li><a href="/tarfeh33/2">قرية باغوش</a></li>
+                                            <li><a href="/tarfeh33/3">نادي وفندق بلطيم</a></li>
+                                            <li><a href="/tarfeh33/4">عمارة كسفريت</a></li>
+                                        </div>
+                                        <hr>
+                                        <div class="upper">
+                                            <h3> مصايف ضباط الصف</h3>
+                                            <li><a href="/tarfeh33/5">نادي وفندق 6 اكتوبر جمصة</a></li>
+                                            <li><a href="/tarfeh33/6">نادي وفندق الانفوشي</a></li>
+                                            <li><a href="/tarfeh33/7">نادي الابطال بعين الصيرة</a></li>
+                                            <li><a href="/tarfeh33/9">نادي وفندق 6 اكتوبر ابوقير</a></li>
+                                            <li><a href="/tarfeh33/10">نادي وفندق 6 اكتوبر فايد</a></li>
+                                            <li><a href="/tarfeh33/11">نادي وفندق راس البر</a></li>
+                                            <li><a href="/tarfeh33/12">نادي وفندق 6 اكتوبر ببورسعيد</a></li>
+                                            <li><a href="/tarfeh33/8">خدمات واستخراجات</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card_container  center  col-lg-4">
+                                <div class="header">
+                                    <h3>المسارح والسينمات</h3>
+                                </div>
+                                <div class="footer">
+                                    <ul class="selected">
+                                        <li><a href="/tarfeh33/13">مسرح وسينما الزمالك</a></li>
+                                        <li><a href="/tarfeh33/14">سينما المستقبل</a></li>
+                                        <li><a href="/tarfeh33/15">سينما السلام</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card_container  center  col-lg-4">
+                                <div class="header">
+                                    <h3>الحدائق والنوادى</h3>
+                                </div>
+                                <div class="footer">
+                                    <ul class="selected">
+                                        <li><a href="/tarfeh33/16"> نادي وفندق 6 اكتوبر الحلمية</a></li>
+                                        <li><a href="/tarfeh33/17">نادي وفندق 6 اكتوبر السلام</a></li>
+                                        <li><a href="/tarfeh33/18">النادي الاجتماعي بالهايكستب</a></li>
+                                        <li><a href="/tarfeh33/19">مركب النايل لوتس</a></li>
+                                        <li><a href="/tarfeh33/20">تنظيم الحفلات</a></li>
+                                        <li><a href="/tarfeh33/21">الإشتراك في القنوات المشفرة</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <% include partials\rightColumn.ejs %>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+<script src="../assets/sliderJs.js"></script>
+
+</html>

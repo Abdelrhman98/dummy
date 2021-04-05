@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-lg-12 add_dabet">
+        <div class="center">
+        <form action="/test2" method="post">
+            <div class="form-group">
+                <select name="da[rank]"  required>
+                    <% ranks.forEach((rank)=>{%>
+                        <option value=<%= rank.id %>><%= rank.rankName %></option>
+                    <% }) %>
+                </select >
+            </div>
+            <div class="form-group">
+                <input type="text" name="da[name]" placeholder="أدخل اسم الضابط" required/>
+            </div>
+            <div class="form-group">
+            <select name="da[branch]" required>
+                <% branches.forEach((branch)=>{%>
+                    <option value=<%= branch.id %>><%= branch.branchName %></option>
+                <% }) %>
+            </select>
+            </div>
+            <input type="submit" value="اضف الضابط">
+        </form>
+        </div>
+    </div>
+</div>

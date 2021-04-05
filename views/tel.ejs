@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>إدارة الشئون المعنويةة</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+    <link href="../assets/sliderStyles.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper">
+        <% include partials\marquee.ejs %>
+
+        <div class="row">
+            <div class="col-lg-2 ">
+                <% include partials\leftColumn.ejs %>
+            </div>
+            <div class="col-lg-8">
+                <div class="custom-header-dar" style="margin-left: 33%;">
+                    <p>
+                        دليل تليفون  إدارة الشئون المعنوية
+                    </p>
+                </div>
+                <div class="scs-container" style="top: 0.5rem;width:79%;margin-left: 18%;">
+
+                    <!-- Full-width images with caption text -->
+                    <% for(var i=0; i<=49; i++) { %>
+
+                    <div class="scs-image-sliderfade scs-fade">
+                        <a href="<%= '../assets/tele/tel'+i+'.jpg' %>" target="_blank">
+                            <img src="<%= '../assets/tele/tel'+i+'.jpg' %>" class="scs-img" style="width:100%">
+                        </a>
+                    </div>
+                    <% } %>
+                    <button type="button" class="btn btn-danger w3-display-left" onclick="showSlidesup(1)"style="margin-left: -7%;">
+                        <p class="fa fa-arrow-circle-o-left" style="font-size: xx-large;margin-bottom: 0%;"></p>
+                    </button>
+        <button type="button" class="btn btn-danger w3-display-right" onclick="showSlides(-1)"style="margin-right: -7%;">
+                        <p class="fa fa-arrow-circle-o-right" style="font-size: xx-large;margin-bottom: 0%;"></p>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <% include partials\rightColumn.ejs %>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides(0);
+        function showSlides(n) {
+            var i;
+            // get the array of divs' with classname image-sliderfade 
+            var slides = document.getElementsByClassName("scs-image-sliderfade");
+            // get the array of divs' with classname dot 
+            for (i = 0; i < slides.length; i++) {
+                // initially set the display to 
+                // none for every image. 
+                slides[i].style.display = "none";
+            }
+
+            // increase by 1, Global variable 
+            slideIndex++;
+
+            // check for boundary 
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    
+    <script>
+        var slideIndex = 0;
+        showSlides(0);
+        function showSlidesup(n) {
+            var i;
+            // get the array of divs' with classname image-sliderfade 
+            var slides = document.getElementsByClassName("scs-image-sliderfade");
+
+            // get the array of divs' with classname dot 
+
+            for (i = 0; i < slides.length; i++) {
+                // initially set the display to 
+                // none for every image. 
+                slides[i].style.display = "none";
+            }
+
+            // increase by 1, Global variable 
+            slideIndex--;
+
+            // check for boundary 
+            if (slideIndex == 0) {
+                slideIndex = 50;
+            }
+
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+\
+<div class="scs-container img_center">
+    <!-- Full-width images with caption text -->
+    <% photos.forEach(function (item){ %>
+    <div class="scs-image-sliderfade scs-fade img_center">
+        <a href="<%= '../../assets/index/'+item.name+'.jpg' %>" target="_blank">
+            <img src="<%= '../../assets/index/'+item.name+'.jpg' %>" class="scs-img" style="width:100%">
+        </a>
+    </div>
+    <% }); %>
+</div>

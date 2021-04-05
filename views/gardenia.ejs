@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>إدارة الشئون المعنويةة</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper">
+        <% include partials\marquee.ejs %>
+        <div class="row">
+            <div class="col-lg-2 ">
+                <% include partials\leftColumn.ejs %>
+            </div>
+            <div class="main-content">
+                <div class="col-lg-8" style="text-align: center;">
+                    <div style="width:85%;margin-top: 8%; margin-left: 15%;" class="panel panel-default">
+                        <div class="panel-heading" style="text-align: center; font-size: x-large; background-image: linear-gradient(to bottom, #2E1205, #EB010B); color: white">
+                            (دار ضباط الشئون المعنويةة (جاردينيا
+                        </div>
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion" style="text-align: -webkit-right;">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="text-align: center;background-image: linear-gradient(to bottom, #732603, #351d1e); color: white">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                أقسام الدار </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <ul class="infolist">
+                                            <li>
+                                                <a href="/africano" style="margin-bottom: 3%;">
+                                                    أفريكانو بارك
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/pool" style="margin-bottom: 3%;">
+                                                    حمام السباحة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/clara" style="margin-bottom: 3%;">
+                                                    مطعم الكلارا
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/lola" style="margin-bottom: 3%;">
+                                                    مطعم اللؤلؤة
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/shalehat" style="margin-bottom: 3%;">
+                                                    شاليهات اللؤلؤة
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <% include partials\rightColumn.ejs %>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="../assets/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <!-- <script src="../assets/bootstrap.min.css"></script> -->
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../assets/metisMenu.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../assets/sb-admin-2.js"></script>
+</body>
+
+
+</html>

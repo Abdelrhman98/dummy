@@ -1,0 +1,37 @@
+<div style="width:85%;margin: 25px auto;" class="panel panel-default">
+    <div class="panel-heading" style="text-align: center; font-size: x-large; background-image: linear-gradient(to bottom, #2E1205, #EB010B); color: white">
+        النوبتجيات
+    </div>
+    <!-- .panel-heading -->
+    <div class="panel-body">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="text-align: center;background-image: linear-gradient(to bottom, #732603, #351d1e); color: white">
+                    <h4 class="panel-title">
+                        <a style="font-size: medium;" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseOne">تعديل النوبتجية</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body" style="width: 500px;height: 727px;margin:auto ;">
+                        <img class="nobatImage" width="500" height="600" src=<%="../assets/nobtgyat/" +nobtgyaName %> alt=""><br><br>
+                        <div style="float: left; margin-left: 2%;">
+                            <form action="/testupload/<%=nobtgyaName%>" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>إسم الصورة</label>
+
+                                    <input name="imageName" type="hidden" value="<%=nobtgyaName%>">
+                                    </input>
+                                    <input name="nobtgyaImage" type="file">
+                                </div>
+                                <br><button style="float: left" type="submit" type="button" class="btn btn-danger">رفع
+                                    الصورة</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .panel-body -->
+</div>

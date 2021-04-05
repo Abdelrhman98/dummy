@@ -1,0 +1,66 @@
+.scs-image-sliderfade {
+    display: none;
+}
+
+.scs-img {
+    vertical-align: middle;
+    vertical-align: middle;
+    width: 100%;
+    height: 500px;
+}
+
+/* Slideshow container */
+.scs-container {
+    
+    position: relative;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    width: 85%;
+    top: 5rem;
+    border-style: groove;
+    margin-left: 15%;
+}
+
+/* Caption text */
+.scs-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 20px 15px;
+    position: absolute;
+    bottom: 0px;
+    width: 40%;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Animation */
+.scs-fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-image {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-image {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

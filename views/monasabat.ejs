@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>إدارة الشئون المعنويةة</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+    <link href="../assets/sliderStyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/customstyle.css">
+
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper ">
+        <% include partials\marquee.ejs %>
+    </div>
+
+        <div class="row main">
+            <div class="container-fluid">
+                <div class="col-lg-2  ">
+                    <% include partials\leftColumn.ejs %>
+                </div>
+                <div class="main-content">
+                    <div class="col-lg-8 ">
+                        <button class="back_button"><a href="/">
+                            <i class="fa fa-home back"></i>
+                        </a></button>
+                        <div class="custom-header  ">
+                            <p>
+                                قاعات المناسبات 
+                            </p>
+                        </div>
+    
+                        <div class="  custom-centered">
+                            <div class="row">
+                                <div class="card_container  center moncen">
+                                    <div class="header">
+                                        <h3>قاعات المناسبات</h3>
+                                    </div>
+                                    <div class="footer">
+                                        <ul class="selected">
+                                            <li><a href="/monasabat/1"> مسجد المشير طنطاوي</a></li>
+                                            <li><a href="/monasabat/2">مسجد آل رشدان</a></li>
+                                            <li><a href="/monasabat/3">مسجد النزهة</a></li>
+                                            <li><a href="/monasabat/4">مسجد الزهراء مدينة نصر</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 ">
+                    <% include partials\rightColumn.ejs %>
+                </div>
+            </div>
+        </div>
+        <button onclick="goBack()" style="display: none;">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</body>
+<script src="../assets/sliderJs.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>إدارة الشئون المعنويةة</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../assets/sb-admin-2.css" rel="stylesheet">
+    <link href="../assets/sliderStyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/customstyle.css">
+
+    <!-- Custom Fonts -->
+    <link href="../assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <header>
+        <% include partials\coverPhoto.ejs %>
+    </header>
+    <div class="site-wrapper">
+        <% include partials\marquee.ejs %>
+    </div>
+        <div class="row home_color">
+            <div class="col-lg-2 ">
+                <% include partials\leftColumn.ejs %>
+            </div>
+            <div class="main-content">
+                <div class="col-lg-8">
+                    <button class="back_button">
+                        <a href="/5admat">
+                        <i class="fa fa-home back"></i>
+                    </a></button>
+                    <div class="custom-header">
+                        <p>
+                            <%=title%>
+                        </p>
+                    </div>
+
+                    <div class="ss-container cenImg">
+                        <div class="row ">
+                            <% imgSrc.forEach(function (item){ %>
+                                <div class="scs-image-sliderfade scs-fade">
+                                    <a href="<%=item%>" target="_blank">
+                                        <img src="<%=item %>" class="scs-img" style="width:100%">
+                                    </a>
+                                </div>
+                                <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <% include partials\rightColumn.ejs %>
+            </div>
+        </div>
+    
+</body>
+<script src="../assets/sliderJs.js"></script>
+
+</html>

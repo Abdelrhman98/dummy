@@ -1,0 +1,147 @@
+.cenImg{
+    width: 50vw!important;
+    direction: rtl!important;
+    margin: 0px 0px 0px 180px!important;
+}
+.custom-header{
+    width: 380px;
+    margin: 50px auto 20px auto;
+    }
+
+div.card_container{
+    box-sizing: border-box!important;
+    direction: rtl!important;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+div.card_container div.header{
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #732603, #351d1e);
+    color:#fff;
+}
+div.card_container div.header h3{
+    margin: 0px;
+    padding:14px 0px;
+}
+div.card_container div.footer{
+
+    background-color: #fff;
+    
+}
+div.card_container div.footer ul{
+    margin: 0px;
+    padding: 20px 0px 14px 0px;
+}
+div.card_container div.footer ul li,
+div.card_container div.footer ul a
+{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    transition: 0.3s all ease-in-out;
+}
+div.card_container div.footer ul a
+{
+    padding: 4px;
+}
+
+div.card_container div.footer ul li{
+    border: 1px solid #732603;
+    width: 200px;
+    margin: 0px auto 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+div.card_container div.footer div.upper h3{
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 0px;
+}
+div.card_container div.footer ul li:hover ,
+div.card_container div.footer ul a:hover{
+    background-color: #732603;
+    color: #fff;
+    box-shadow:5px 5px 30px #732603;
+    transition: 0.3s all ease-in-out;
+}
+.custom-centered{
+    width: 200px;
+    margin: auto!important ;
+}
+.red{
+    background-color: #f00;
+}
+
+.green{
+    background-color: #0f0;
+}
+
+.blue{
+    background-color: #00f;
+}
+
+.col-lg-8 {
+    right: 0px !important;
+}
+.main{
+background-color: #dad1bf;
+}
+
+
+.qada{
+    direction: rtl!important;
+    float: right!important;
+}
+
+.qada-card{
+    background-color: #dad1bf;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius:10px;
+}
+div.img_contianer{
+    width:200px;
+    margin:auto;
+}
+div.qada-card div.info{
+    text-align: center;
+    font-weight: bold;
+    border:10px double #351d1e;
+    padding:10px;
+    font-size: 12px;
+} 
+img.card-img{
+    width: 100% ;
+    height: 200px;
+    margin: auto!important;
+}
+
+
+body{
+}
+
+.img_center{
+    width: 100%;
+    height: 100%;
+    margin: auto!important;
+}
+.card-img{
+    transition: 0.5s all ease-in-out;
+}
+.card-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+
+.scs-container{
+    background-color:#e3dbc8!important;
+}
+
+.img-resizer{
+    width:200px;
+    height: 200px;
+    overflow: hidden;
+}
